@@ -1,0 +1,186 @@
+/* styles.css */
+
+/* General Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    direction: ltr;  /* Left-to-right text for English */
+    background-color: #F4F6F9;  /* Soft background color */
+    color: #333333;  /* Dark text for better contrast */
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #007bff;  /* Soft blue for the header */
+    color: white;
+    padding: 60px 0;
+    border-bottom: 5px solid #0056b3;  /* Darker blue border */
+    border-radius: 20px 20px 0 0;  /* Rounded top corners */
+    text-align: center;  /* Center align text */
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+/* Medical Info Section */
+#info {
+    background-color: #ffffff;  /* White background for the info section */
+    padding: 40px 0;
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);  /* Light shadow */
+    text-align: center;  /* Center align text */
+}
+
+#info h2 {
+    font-size: 2rem;
+    color: #007bff;  /* Blue for headings */
+    margin-bottom: 20px;
+}
+
+#info p {
+    font-size: 1.2rem;
+    color: #555555;  /* Lighter gray for body text */
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+/* Doctor's signature */
+.doctor-signature {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff6347;  /* Bright color (Tomato Red) for the signature */
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;  /* Monospace font for a signature feel */
+}
+
+/* Upload Image Section */
+#upload {
+    padding: 40px 0;
+    background: #ffffff;  /* White background for the upload section */
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);  /* Light shadow */
+    position: relative;
+    text-align: center;  /* Center align text */
+}
+
+#upload h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #007bff;  /* Matching blue for headings */
+}
+
+#upload p {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    color: #555555;  /* Lighter gray for body text */
+}
+
+#upload input[type="file"] {
+    width: 70%;
+    padding: 15px;
+    border-radius: 15px;  /* Increased border-radius for rounded corners */
+    border: 2px solid #007bff;  /* Blue border */
+    margin-bottom: 20px;
+    font-size: 1rem;
+    background-color: #f9f9f9;
+    color: #333333;
+    transition: border-color 0.3s ease;
+}
+
+#upload input[type="file"]:focus {
+    border-color: #28a745;  /* Green border on focus */
+    outline: none;
+}
+
+/* Upload Button */
+#upload button {
+    padding: 15px 30px;
+    background-color: #007bff;  /* Blue button for action */
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 25px;  /* More rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, animation 0.3s ease;
+}
+
+/* Hover effect for the upload button */
+#upload button:hover {
+    background-color: #0056b3;  /* Darker blue on hover */
+    transform: scale(1.1);  /* Slightly enlarge the button on hover */
+    animation: shake 0.5s ease-in-out;  /* Apply the shake animation */
+}
+
+/* Adding vibration effect (shake animation) */
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#upload button:active {
+    transform: scale(1);  /* Return to original size on click */
+}
+
+/* Responsive Design (for smaller screens) */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    #info h2 {
+        font-size: 1.5rem;
+    }
+
+    #info p {
+        font-size: 1rem;
+    }
+
+    #upload h2 {
+        font-size: 1.5rem;
+    }
+
+    #upload p {
+        font-size: 1rem;
+    }
+
+    #upload input[type="file"] {
+        width: 90%;
+    }
+
+    #upload button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Imaging Upload</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Medical Imaging Upload</h1>
+            <p>Upload medical images for analysis and diagnosis.</p>
+        </div>
+    </header>
+
+    <!-- Medical Imaging Explanation -->
+    <section id="info">
+        <div class="container">
+            <h2>Brain Imaging and Its Importance</h2>
+            <p>
+                Brain imaging, such as MRI and CT scans, plays a crucial role in diagnosing and understanding various neurological conditions. These imaging techniques provide detailed insights into the brain's structure and function, helping doctors detect abnormalities like tumors, strokes, and brain injuries. Early diagnosis through medical imaging is essential for effective treatment and improving patient outcomes.
+            </p>
+            <p>
+                Medical imaging is not only important for the detection of diseases but also for planning and monitoring treatment strategies. For instance, in brain cancer patients, imaging can help doctors track the progress of the tumor, assess the effectiveness of treatments like chemotherapy or radiation therapy, and make decisions for future interventions. Early and precise detection significantly improves the chances of successful treatment.
+            </p>
+            <p>
+                By uploading your brain scan images, you are taking an important step toward understanding your health and ensuring timely intervention if necessary. The power of modern imaging technology cannot be underestimated in the early diagnosis of life-threatening conditions.
+            </p>
+            <!-- Doctor's signature -->
+            <p class="doctor-signature">
+                Dr. Azza Ramadan
+            </p>
+        </div>
+    </section>
+
+    <!-- Image Upload Section -->
+    <section id="upload">
+        <div class="container">
+            <h2>Upload Your Brain Scan</h2>
+            <p>Upload your MRI or CT scan images for quick analysis and diagnosis.</p>
+            <input type="file" id="fileInput" accept="image/*">
+            <button onclick="uploadFile()">Upload</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
